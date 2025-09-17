@@ -12,5 +12,11 @@ export default defineNuxtConfig({
         scss:{}
       }
     }
+  },
+  runtimeConfig:{
+    stripeSecretKey: process.env.STRIPE_SUPER_SECRET_KEY_SECRET_LOCAL
+  },
+  public:{
+    stripePublishableKey: process.env.STRIPE_SUPER_SECRET_KEY_PUBLISHABLE_LOCAL
   }
 })
